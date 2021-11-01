@@ -164,7 +164,7 @@ public class NavigationBar extends CordovaPlugin {
 		Activity activity=cordova.getActivity();
 		activity.getWindow().getDecorView().setSystemUiVisibility(
 			View.SYSTEM_UI_FLAG_HIDE_NAVIGATION//
-			| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+			//| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION //fix scrolling when keyboard is shown
 			//| View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
 			//| View.SYSTEM_UI_FLAG_LAYOUT_STABLE
 			| View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
